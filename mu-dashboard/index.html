@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-i18n-key="webstore_lang">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mu Dashboard — System &amp; Browser Vitals</title>
+<meta name="description" content="Mu Dashboard — live CPU, memory, storage, network, battery and browser vitals. Optional floating HUD. One-time unlock via ExtensionPay.">
+<link rel="icon" href="assets/icon-128.png" type="image/png">
+<link rel="stylesheet" href="../common/fonts.css">
+<link rel="stylesheet" href="../common/base.css">
+<link rel="stylesheet" href="theme.css">
+<script src="../common/i18n.js"></script>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<div class="bg-grain" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/icon-128.png" width="36" height="36" alt="">
+      <span>Mu Dashboard</span>
+    </a>
+    <div class="nav-actions">
+      <a class="nav-link" href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy</span></a>
+      <span class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="zh">中</button>
+        <button type="button" data-lang="en">EN</button>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="brand-mark">
+      <img src="assets/icon-128.png" width="64" height="64" alt="">
+      <h1 class="brand-name">
+        Mu Dashboard
+        <span class="en" lang="zh">系统与浏览器指标</span>
+        <span class="en" lang="en">System &amp; Browser Vitals</span>
+      </h1>
+    </div>
+    <p class="lead" lang="zh">在弹窗看板中查看 CPU、内存、存储、网络、电池与浏览器指标。可选可收折悬浮 HUD，需你授权后才会出现在网页上。</p>
+    <p class="lead" lang="en">See CPU, memory, storage, network, battery, and browser metrics in a popup dashboard. An optional collapsible floating HUD can sit on web pages after you grant site access.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#features"><span lang="zh">了解功能</span><span lang="en">See features</span></a>
+      <a class="btn btn-ghost" href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></a>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Features</span>
+      <h2 lang="zh">核心能力</h2>
+      <h2 lang="en">What’s inside</h2>
+      <p lang="zh">本地指标、清晰总览，可选解锁更深的系统洞察。</p>
+      <p lang="en">Local vitals, a clear overview, and optional unlock for deeper system insight.</p>
+    </div>
+
+    <div class="features">
+      <article class="feature">
+        <div class="feature-num">01</div>
+        <div>
+          <h3 lang="zh">总览仪表</h3>
+          <h3 lang="en">Overview gauges</h3>
+          <p lang="zh">CPU / 内存占用与状态色，一眼看清当前负载。</p>
+          <p lang="en">CPU and memory with clear usage levels.</p>
+        </div>
+      </article>
+      <article class="feature">
+        <div class="feature-num">02</div>
+        <div>
+          <h3 lang="zh">系统详情</h3>
+          <h3 lang="en">System details</h3>
+          <p lang="zh">型号、核心、内存、存储卷、显示器等信息。</p>
+          <p lang="en">Model, cores, RAM, storage volumes, and displays.</p>
+        </div>
+      </article>
+      <article class="feature">
+        <div class="feature-num">03</div>
+        <div>
+          <h3 lang="zh">浏览器信息</h3>
+          <h3 lang="en">Browser vitals</h3>
+          <p lang="zh">标签与窗口数量、屏幕、UA、时区、JS 堆。</p>
+          <p lang="en">Tab and window counts, screen, user agent, timezone, JS heap.</p>
+        </div>
+      </article>
+      <article class="feature">
+        <div class="feature-num">04</div>
+        <div>
+          <h3 lang="zh">可选解锁</h3>
+          <h3 lang="en">Optional unlock</h3>
+          <p lang="zh">每核 CPU、网络与电池、历史曲线、更快刷新、告警、导出、增强悬浮面板。</p>
+          <p lang="en">Per-core CPU, network &amp; battery, history charts, faster refresh, alerts, export, enhanced HUD.</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="pricing" lang="zh">悬浮 HUD 默认关闭；开启时由 Chrome 弹出网站权限确认，可收折且不读取网页内容。可选解锁支付由 <strong>ExtensionPay</strong> 一次性处理，无订阅。</p>
+    <p class="pricing" lang="en">Floating HUD is off by default; enabling asks Chrome for site permission. Collapsible; does not read page content. Optional unlock via one-time <strong>ExtensionPay</strong> — no subscriptions.</p>
+  </div>
+</section>
+
+<footer class="wrap footer">
+  <p>© <span data-year></span> Mu Dashboard</p>
+  <div style="display:flex;gap:18px">
+    <a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></a>
+  </div>
+</footer>
+
+<script>WebstoreI18n.mount({ reveal: '.feature' });</script>
+</body>
+</html>

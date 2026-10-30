@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-i18n-key="webstore_lang">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Mu Dashboard</title>
+<meta name="description" content="Privacy policy for the Mu Dashboard browser extension (system and browser vitals).">
+<link rel="icon" href="assets/icon-128.png" type="image/png">
+<link rel="stylesheet" href="../common/fonts.css">
+<link rel="stylesheet" href="../common/base.css">
+<link rel="stylesheet" href="theme.css">
+<script src="../common/i18n.js"></script>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<div class="bg-grain" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/icon-128.png" width="36" height="36" alt="">
+      <span>Mu Dashboard</span>
+    </a>
+    <div class="nav-actions">
+      <a class="nav-link" href="index.html"><span lang="zh">返回主页</span><span lang="en">Home</span></a>
+      <span class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="zh">中</button>
+        <button type="button" data-lang="en">EN</button>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap pp-hero">
+  <span class="kicker">Privacy Policy</span>
+  <h1 lang="zh">Mu Dashboard · 隐私政策</h1>
+  <h1 lang="en">Mu Dashboard · Privacy Policy</h1>
+  <p class="meta" lang="zh">最后更新：2026 年 10 月 24 日</p>
+  <p class="meta" lang="en">Last updated: October 24, 2026</p>
+</header>
+
+<main class="wrap pp-doc">
+  <div lang="zh">
+    <p><strong>Mu Dashboard</strong> 用于展示本机系统与浏览器指标（CPU、内存、存储、显示器及相关浏览器 API）。设计目标是尽量少收集数据。</p>
+
+    <h2>一、在你设备上处理的内容</h2>
+    <ul>
+      <li>用于渲染弹窗看板与可选悬浮 HUD 的指标快照</li>
+      <li>设置：语言、刷新间隔、悬浮面板偏好、可选告警阈值（<code>chrome.storage.local</code>）</li>
+      <li>可选解锁状态经 <a href="https://extensionpay.com" target="_blank" rel="noopener">ExtensionPay</a>：可能在本地缓存付费/邮箱信息以便短时离线识别解锁。银行卡信息由 ExtensionPay 及其支付服务商处理——Mu Dashboard 不运营指标后端</li>
+    </ul>
+
+    <h2>二、我们不收集</h2>
+    <ul>
+      <li>网页内容、表单数据或网站 Cookie</li>
+      <li>浏览历史、标签标题或标签 URL</li>
+      <li>按键或剪贴板内容</li>
+      <li>本扩展自有代码中的分析或广告标识符</li>
+      <li>扩展界面发起的远程字体或追踪请求（仅使用系统字体）</li>
+    </ul>
+
+    <h2>三、权限说明</h2>
+    <table>
+      <thead>
+        <tr><th>权限</th><th>用途</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>system.cpu</code> / <code>system.memory</code> / <code>system.storage</code> / <code>system.display</code></td><td>读取看板展示的硬件指标</td></tr>
+        <tr><td><code>storage</code></td><td>保存设置与本地解锁缓存</td></tr>
+        <tr><td><code>alarms</code></td><td>轻量后台预热</td></tr>
+        <tr><td><code>scripting</code> + 可选主机访问</td><td>仅在你开启悬浮 HUD 时；注入封闭 Shadow 浮层，不读取页面</td></tr>
+        <tr><td><code>notifications</code>（可选）</td><td>仅在你开启桌面告警时</td></tr>
+      </tbody>
+    </table>
+    <div class="pp-note"><p>悬浮 HUD <strong>默认关闭</strong>。开启时会触发 Chrome 权限提示。</p></div>
+
+    <h2>四、网络</h2>
+    <ul>
+      <li>仅在你打开购买或登录时访问 <strong>ExtensionPay</strong>（<code>extensionpay.com</code>）</li>
+      <li>无其他自有遥测接口</li>
+    </ul>
+
+    <h2>五、数据存储与你的权利</h2>
+    <p>设置与解锁缓存通过浏览器本地存储 API 保存在你的设备上。可通过清除扩展数据或卸载 Mu Dashboard 删除。</p>
+
+    <h2>六、未成年人</h2>
+    <p>本扩展不面向 13 岁以下儿童，也不会有意收集儿童的个人信息。</p>
+
+    <h2>七、政策更新</h2>
+    <p>我们可能不时更新本政策。重大变更可能随扩展更新说明。请定期查阅本页。</p>
+
+    <h2>八、联系我们</h2>
+    <p>隐私相关问题请发送邮件至 <a href="mailto:yugakhans@gmail.com">yugakhans@gmail.com</a>，或联系 Chrome Web Store 商品页上的发布者。</p>
+
+    <h2>九、同意</h2>
+    <p>安装并使用 Mu Dashboard，即表示你同意本隐私政策。若不同意，请勿使用本扩展。</p>
+  </div>
+
+  <div lang="en">
+    <p><strong>Mu Dashboard</strong> shows local system and browser vitals (CPU, memory, storage, displays, and related browser APIs). It is designed to minimize data collection.</p>
+
+    <h2>1. What we process on your device</h2>
+    <ul>
+      <li>Metric snapshots used to render the popup and the optional floating HUD</li>
+      <li>Settings: language, refresh interval, floating-panel preferences, optional alert thresholds (<code>chrome.storage.local</code>)</li>
+      <li>Optional unlock status via <a href="https://extensionpay.com" target="_blank" rel="noopener">ExtensionPay</a>: a local paid/email cache may be kept so unlock works offline for a limited TTL. Payment card data is processed by ExtensionPay / its processors — Mu Dashboard does not operate a metrics backend</li>
+    </ul>
+
+    <h2>2. What we do not collect</h2>
+    <ul>
+      <li>Page content, form data, or website cookies</li>
+      <li>Browsing history, tab titles, or tab URLs</li>
+      <li>Keystrokes or clipboard contents</li>
+      <li>Analytics or advertising identifiers from this extension’s own code</li>
+      <li>Remote font or tracking requests from the extension UI (system fonts only)</li>
+    </ul>
+
+    <h2>3. Permissions</h2>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Why</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>system.cpu</code> / <code>system.memory</code> / <code>system.storage</code> / <code>system.display</code></td><td>Read hardware vitals shown in the dashboard</td></tr>
+        <tr><td><code>storage</code></td><td>Save settings and local unlock cache</td></tr>
+        <tr><td><code>alarms</code></td><td>Lightweight background warm-up</td></tr>
+        <tr><td><code>scripting</code> + optional host access</td><td>Only if you turn on the floating HUD; injects a closed-shadow overlay that does not read the page</td></tr>
+        <tr><td><code>notifications</code> (optional)</td><td>Only if you enable desktop alerts</td></tr>
+      </tbody>
+    </table>
+    <div class="pp-note"><p>The floating HUD is <strong>off by default</strong>. Enabling it triggers Chrome’s permission prompt.</p></div>
+
+    <h2>4. Network</h2>
+    <ul>
+      <li><strong>ExtensionPay</strong> (<code>extensionpay.com</code>) only when you open purchase or login</li>
+      <li>No other first-party telemetry endpoints</li>
+    </ul>
+
+    <h2>5. Data storage and your rights</h2>
+    <p>Settings and unlock cache stay on your device via the browser’s local storage API. You can delete them by clearing extension data or uninstalling Mu Dashboard.</p>
+
+    <h2>6. Children’s privacy</h2>
+    <p>This extension is not directed to children under 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>7. Changes</h2>
+    <p>We may update this policy from time to time. Significant changes may be noted with extension updates. Please review this page periodically.</p>
+
+    <h2>8. Contact</h2>
+    <p>For privacy questions, email <a href="mailto:yugakhans@gmail.com">yugakhans@gmail.com</a> or contact the publisher listed on the Chrome Web Store item page.</p>
+
+    <h2>9. Consent</h2>
+    <p>By installing and using Mu Dashboard, you agree to this privacy policy. If you do not agree, please do not use the extension.</p>
+  </div>
+</main>
+
+<footer class="wrap footer">
+  <p>© <span data-year></span> Mu Dashboard</p>
+  <div style="display:flex;gap:18px">
+    <a href="index.html"><span lang="zh">返回主页</span><span lang="en">Back to home</span></a>
+  </div>
+</footer>
+
+<script>WebstoreI18n.mount();</script>
+</body>
+</html>

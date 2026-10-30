@@ -1,0 +1,30 @@
+/* Love Lines theme — blush + cherry rose */
+:root{
+  --bg:#fff7f5;
+  --bg-2:#ffe8e2;
+  --ink:#1c1216;
+  --muted:#6b4f58;
+  --accent:#c73e66;
+  --accent-2:#e87461;
+  --paper:#fffbfa;
+  --line:rgba(28,18,22,.1);
+}
+
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:
+    linear-gradient(180deg,transparent 55%,var(--bg) 100%),
+    radial-gradient(ellipse 90% 70% at 70% 35%,rgba(199,62,102,.12),transparent 60%);
+}
+
+.heart-field{
+  position:absolute;right:-4%;top:18%;width:min(42vw,380px);height:min(42vw,380px);
+  pointer-events:none;opacity:.55;
+  animation:softFloat 7s ease-in-out infinite reverse;
+}
+.heart-field svg{width:100%;height:100%}
+
+@media (max-width:760px){
+  .heart-field{opacity:.28;width:220px;height:220px;right:-8%;top:8%}
+  .hero{min-height:auto;padding:56px 0 48px}
+}
