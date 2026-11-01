@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh" data-lang="zh" data-i18n-key="webstore_lang">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vibe Coding Kit — AI 编程知识库与面试模拟器</title>
+<meta name="description" content="Vibe Coding Kit：13 大类 400 条 AI 编程知识库，任意 OpenAI 兼容接口的 AI 对话与面试模拟评分，36KB Shadow DOM 浮动小窗。自带 API Key，隐私优先。">
+<link rel="icon" href="assets/icon-128.png" type="image/png">
+<link rel="stylesheet" href="../common/fonts.css">
+<link rel="stylesheet" href="../common/base.css">
+<link rel="stylesheet" href="theme.css">
+<script src="../common/i18n.js"></script>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<div class="bg-grain" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/icon-128.png" width="34" height="34" alt="">
+      <span>Vibe Coding Kit</span>
+    </a>
+    <div class="nav-actions">
+      <a class="nav-link" href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy</span></a>
+      <span class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="zh">中</button>
+        <button type="button" data-lang="en">EN</button>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-plane" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="brand-mark">
+        <img src="assets/icon-128.png" width="58" height="58" alt="">
+        <h1 class="brand-name">
+          Vibe Coding Kit
+          <span class="en" lang="zh">AI 编程知识库 &amp; 面试模拟器</span>
+          <span class="en" lang="en">AI Coding KB &amp; Interview Coach</span>
+        </h1>
+      </div>
+      <p class="lead" lang="zh">13 大类 400 条 AI 编程方法论知识库（Harness、SDD、Loop、提示工程……），接你自己的 OpenAI 兼容模型做对话问答与面试模拟评分，还能在任意网页唤出 36KB 的浮动小窗随取随用。</p>
+      <p class="lead" lang="en">400 curated entries across 13 categories of AI-era coding practice (Harness, SDD, loops, prompting…), plus AI chat and scored mock interviews powered by your own OpenAI-compatible endpoint — with a 36KB Shadow-DOM floating widget on any page.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#features"><span lang="zh">了解功能</span><span lang="en">See features</span></a>
+        <a class="btn btn-ghost" href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-visual-frame">
+        <div class="vk-panel">
+          <div class="vk-kb">
+            <div class="vk-kb-tag">SDD · 规格驱动开发</div>
+            <div class="vk-kb-title">先写 Spec，再让 Agent 动手</div>
+            <div class="vk-kb-line"><i></i><i></i><i class="vk-short"></i></div>
+            <div class="vk-chips">
+              <span class="vk-chip vk-on">Harness</span><span class="vk-chip">Loop</span><span class="vk-chip">Prompt</span><span class="vk-chip">13 类</span>
+            </div>
+          </div>
+          <div class="vk-chat">
+            <div class="vk-bubble">
+              <span lang="zh">这个仓库的 Agent 上下文该怎么拆？</span>
+              <span lang="en">How should I split agent context for this repo?</span>
+            </div>
+            <div class="vk-reply">
+              <span class="vk-model">AI ✦</span>
+              <span lang="zh">按模块边界拆三份知识卡：架构、约定、坑点……</span>
+              <span lang="en">Split into three cards: architecture, conventions, pitfalls…</span>
+            </div>
+            <div class="vk-score">
+              <span class="vk-score-label" lang="zh">面试模拟评分</span><span class="vk-score-label" lang="en">Mock interview score</span>
+              <span class="vk-score-bar"><i></i></span>
+              <span class="vk-score-num">86</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><span lang="zh">向下滚动</span><span lang="en">Scroll</span><i></i></div>
+</header>
+
+<section class="section" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Features</span>
+      <h2 lang="zh">核心能力</h2>
+      <h2 lang="en">What’s inside</h2>
+      <p lang="zh">知识库离线可读，AI 能力接你自己的账号。</p>
+      <p lang="en">The knowledge base reads offline; AI runs on your own account.</p>
+    </div>
+
+    <div class="features">
+      <article class="feature">
+        <div class="feature-num">01</div>
+        <div>
+          <h3 lang="zh">13 类 · 400 条知识库</h3>
+          <h3 lang="en">13 categories · 400 entries</h3>
+          <p lang="zh">Harness、SDD、Agent Loop、提示工程、上下文工程等主题全文搜索与分类筛选，条目随扩展打包，离线可读。</p>
+          <p lang="en">Full-text search and filtering across harness, SDD, agent loops, prompting and context engineering — bundled with the extension, readable offline.</p>
+        </div>
+      </article>
+      <article class="feature">
+        <div class="feature-num">02</div>
+        <div>
+          <h3 lang="zh">接你自己的模型</h3>
+          <h3 lang="en">Bring your own model</h3>
+          <p lang="zh">任意 OpenAI 兼容接口：Base URL、API Key、模型名、Temperature 全部自填，由后台 service worker 代理请求。Key 只存在你的浏览器本地。</p>
+          <p lang="en">Any OpenAI-compatible endpoint: you set Base URL, API Key, model and temperature. Requests are proxied by the background service worker; the key lives only in your local browser storage.</p>
+        </div>
+      </article>
+      <article class="feature">
+        <div class="feature-num">03</div>
+        <div>
+          <h3 lang="zh">面试模拟与评分</h3>
+          <h3 lang="en">Mock interviews, scored</h3>
+          <p lang="zh">AI 出题追问，按准确性 40 / 完整性 30 / 深度 20 / 表达 10 四维评分，帮你把 vibe check 变成可练习的面试。</p>
+          <p lang="en">AI asks and follows up, then scores you on accuracy (40), completeness (30), depth (20) and delivery (10).</p>
+        </div>
+      </article>
+      <article class="feature">
+        <div class="feature-num">04</div>
+        <div>
+          <h3 lang="zh">36KB 浮动小窗</h3>
+          <h3 lang="en">A 36KB floating widget</h3>
+          <p lang="zh">Shadow DOM 隔离注入，仅约 36KB；在任何网页呼出，按需拉取知识条目，不读取、不上传页面内容。</p>
+          <p lang="en">Injected in an isolated Shadow DOM at just ~36KB. Summon it on any page to pull knowledge on demand — it never reads or uploads page content.</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="pricing" lang="zh">免费版每类可读前 6 条、每天 12 次 AI 对话与 3 次面试模拟；<strong>Pro 为 ExtensionPay 一次性买断</strong>，解锁全部 400 条、无限对话与面试、自定义模型参数，无订阅。</p>
+    <p class="pricing" lang="en">Free includes the first 6 entries per category, 12 AI chats and 3 mock interviews a day; <strong>Pro is a one-time ExtensionPay unlock</strong> — all 400 entries, unlimited chat &amp; interviews, custom model settings. No subscriptions.</p>
+  </div>
+</section>
+
+<footer class="wrap footer">
+  <p>© <span data-year></span> Vibe Coding Kit</p>
+  <a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></a>
+</footer>
+
+<script>WebstoreI18n.mount({ reveal: '.feature' });</script>
+</body>
+</html>

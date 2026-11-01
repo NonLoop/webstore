@@ -1,0 +1,78 @@
+/* Pocket Kit — teal + arcade amber (light base) */
+:root{
+  --accent:#0f9d8a;
+  --accent-2:#e0a100;
+}
+
+.bg{
+  background:
+    radial-gradient(ellipse 70% 50% at 8% -5%,rgba(15,157,138,.12),transparent 55%),
+    radial-gradient(ellipse 55% 45% at 92% 8%,rgba(224,161,0,.12),transparent 50%),
+    linear-gradient(180deg,var(--bg),var(--bg-2));
+}
+
+.hero-visual-frame{
+  background:linear-gradient(165deg,#fbfefc,#eefaf6);
+}
+
+.pk-panel{
+  width:100%;height:100%;padding:20px;
+  display:grid;grid-template-rows:auto 1fr auto;gap:14px;
+}
+.pk-top{
+  display:flex;align-items:center;gap:10px;
+}
+.pk-tabs{display:flex;gap:6px}
+.pk-tabs i{
+  display:block;width:26px;height:8px;border-radius:999px;
+  background:rgba(20,22,21,.12);
+}
+.pk-tabs i.pk-on{background:linear-gradient(90deg,var(--accent),var(--accent-2))}
+.pk-title{
+  margin-left:auto;font-size:.8rem;font-weight:700;letter-spacing:.08em;
+  color:var(--muted);text-transform:uppercase;
+}
+.pk-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:10px;
+  align-content:center;
+}
+.pk-tile{
+  display:grid;place-items:center;aspect-ratio:1;font-size:1.5rem;
+  border-radius:14px;background:#fff;
+  border:1px solid rgba(20,22,21,.08);
+  box-shadow:0 8px 18px -14px rgba(15,157,138,.4);
+}
+.pk-tile:nth-child(4n+2){animation:softFloat 5.2s ease-in-out .5s infinite}
+.pk-tile:nth-child(4n+4){animation:softFloat 5.2s ease-in-out 1.4s infinite}
+.pk-tile.pk-hi{
+  background:linear-gradient(135deg,rgba(15,157,138,.14),rgba(224,161,0,.16));
+  border-color:rgba(15,157,138,.4);
+  box-shadow:0 10px 22px -10px rgba(15,157,138,.55);
+}
+.pk-score{
+  display:flex;align-items:center;gap:10px;padding:12px 16px;
+  border-radius:14px;background:#fff;
+  border:1px solid rgba(20,22,21,.08);
+}
+.pk-score-label{
+  font-size:.7rem;font-weight:700;letter-spacing:.12em;color:var(--muted);
+}
+.pk-score-val{
+  font-family:var(--serif);font-size:1.35rem;font-weight:800;
+  background:linear-gradient(120deg,var(--accent),var(--accent-2));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-left:auto;
+}
+.pk-score-tag{
+  font-size:.62rem;font-weight:700;letter-spacing:.1em;
+  padding:4px 9px;border-radius:999px;
+  color:#0b6b5e;background:rgba(15,157,138,.13);
+  border:1px solid rgba(15,157,138,.3);
+}
+
+.pp-doc th{background:rgba(15,157,138,.05)}
+.pp-doc code{color:var(--accent);background:rgba(15,157,138,.1)}
+
+@media (prefers-reduced-motion:reduce){
+  .pk-tile{animation:none}
+}

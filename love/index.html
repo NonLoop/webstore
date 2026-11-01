@@ -18,7 +18,7 @@
 <nav class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="index.html">
-      <img src="assets/icon-128.png" width="36" height="36" alt="">
+      <img src="assets/icon-128.png" width="34" height="34" alt="">
       <span lang="zh">恋爱话术</span><span lang="en">Love Lines</span>
     </a>
     <div class="nav-actions">
@@ -32,37 +32,47 @@
 </nav>
 
 <header class="hero">
-  <div class="heart-field" aria-hidden="true">
-    <svg viewBox="0 0 320 320" fill="none">
-      <defs>
-        <linearGradient id="hg" x1="40" y1="40" x2="280" y2="280" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#C73E66" stop-opacity=".55"/>
-          <stop offset="1" stop-color="#E87461" stop-opacity=".2"/>
-        </linearGradient>
-      </defs>
-      <path d="M160 278C160 278 36 198 36 118c0-36 28-62 64-62 22 0 42 12 60 36 18-24 38-36 60-36 36 0 64 26 64 62 0 80-124 160-124 160z" fill="url(#hg)"/>
-      <circle cx="86" cy="72" r="7" fill="#C73E66" opacity=".35"/>
-      <circle cx="248" cy="96" r="5" fill="#E87461" opacity=".45"/>
-      <circle cx="220" cy="240" r="6" fill="#C73E66" opacity=".25"/>
-    </svg>
-  </div>
-  <div class="wrap hero-inner">
-    <div class="brand-mark">
-      <img src="assets/icon-128.png" width="64" height="64" alt="">
-      <h1 class="brand-name">
-        <span lang="zh">恋爱话术</span>
-        <span lang="en">Love Lines</span>
-        <span class="en" lang="zh">Love Lines</span>
-        <span class="en" lang="en">恋爱话术</span>
-      </h1>
+  <div class="hero-plane" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="brand-mark">
+        <img src="assets/icon-128.png" width="58" height="58" alt="">
+        <h1 class="brand-name">
+          <span lang="zh">恋爱话术</span>
+          <span lang="en">Love Lines</span>
+          <span class="en" lang="zh">Love Lines</span>
+          <span class="en" lang="en">恋爱话术</span>
+        </h1>
+      </div>
+      <p class="lead" lang="zh">帮你找到合适的表达，也帮你拆解真实恋爱情境，支持中英双语。</p>
+      <p class="lead" lang="en">Find the right words. Decode real dating moments. Bilingual (EN / 中文).</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#features"><span lang="zh">了解功能</span><span lang="en">See features</span></a>
+        <a class="btn btn-ghost" href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></a>
+      </div>
     </div>
-    <p class="lead" lang="zh">帮你找到合适的表达，也帮你拆解真实恋爱情境，支持中英双语。</p>
-    <p class="lead" lang="en">Find the right words. Decode real dating moments. Bilingual (EN / 中文).</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#features"><span lang="zh">了解功能</span><span lang="en">See features</span></a>
-      <a class="btn btn-ghost" href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></a>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-visual-frame">
+        <div class="love-stage"></div>
+        <div class="love-orbit"></div>
+        <div class="hero-visual-inner">
+          <svg class="love-heart" viewBox="0 0 240 220" fill="none">
+            <defs>
+              <linearGradient id="heartFill" x1="20" y1="20" x2="210" y2="200" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#E87461"/>
+                <stop offset=".45" stop-color="#C73E66"/>
+                <stop offset="1" stop-color="#A12E52"/>
+              </linearGradient>
+            </defs>
+            <path d="M120 198C120 198 28 136 28 78c0-28 22-48 50-48 18 0 33 10 42 28 9-18 24-28 42-28 28 0 50 20 50 48 0 58-92 120-92 120z" fill="url(#heartFill)" opacity=".92"/>
+            <path d="M78 72c8-18 22-26 36-24" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".35"/>
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
+  <div class="scroll-hint" aria-hidden="true"><span>Scroll</span><i></i></div>
 </header>
 
 <section class="section" id="features">
@@ -121,9 +131,7 @@
 
 <footer class="wrap footer">
   <p>© <span data-year></span> <span lang="zh">恋爱话术 · Love Lines</span><span lang="en">Love Lines</span></p>
-  <div style="display:flex;gap:18px">
-    <a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></a>
-  </div>
+  <a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></a>
 </footer>
 
 <script>WebstoreI18n.mount({ reveal: '.feature' });</script>

@@ -1,30 +1,55 @@
-/* Love Lines theme — blush + cherry rose */
+/* Love Lines — cherry rose, soft paper */
 :root{
-  --bg:#fff7f5;
-  --bg-2:#ffe8e2;
-  --ink:#1c1216;
-  --muted:#6b4f58;
+  --bg:#fff6f3;
+  --bg-2:#ffe9e3;
+  --ink:#1a1014;
+  --muted:#7a5560;
   --accent:#c73e66;
   --accent-2:#e87461;
-  --paper:#fffbfa;
-  --line:rgba(28,18,22,.1);
+  --paper:#fffaf8;
+  --line:rgba(26,16,20,.09);
 }
 
-.hero::before{
-  content:"";position:absolute;inset:0;z-index:-1;
+.bg{
   background:
-    linear-gradient(180deg,transparent 55%,var(--bg) 100%),
-    radial-gradient(ellipse 90% 70% at 70% 35%,rgba(199,62,102,.12),transparent 60%);
+    radial-gradient(ellipse 65% 48% at 12% 0%,rgba(199,62,102,.16),transparent 55%),
+    radial-gradient(ellipse 50% 40% at 95% 12%,rgba(232,116,97,.14),transparent 50%),
+    linear-gradient(180deg,#fff8f5,#ffe8e1 70%,#fff6f3);
 }
 
-.heart-field{
-  position:absolute;right:-4%;top:18%;width:min(42vw,380px);height:min(42vw,380px);
-  pointer-events:none;opacity:.55;
-  animation:softFloat 7s ease-in-out infinite reverse;
+.hero-plane{
+  background:
+    radial-gradient(ellipse 70% 65% at 82% 45%,rgba(199,62,102,.18),transparent 58%),
+    linear-gradient(180deg,transparent 55%,var(--bg));
 }
-.heart-field svg{width:100%;height:100%}
 
-@media (max-width:760px){
-  .heart-field{opacity:.28;width:220px;height:220px;right:-8%;top:8%}
-  .hero{min-height:auto;padding:56px 0 48px}
+.love-stage{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 50% 42%,rgba(255,255,255,.55),transparent 58%),
+    linear-gradient(160deg,rgba(255,214,204,.45),rgba(255,236,230,.2) 45%,rgba(199,62,102,.08));
+}
+.love-heart{
+  width:72%;height:72%;
+  animation:softFloat 6.5s ease-in-out infinite;
+  filter:drop-shadow(0 24px 40px rgba(199,62,102,.22));
+}
+.love-orbit{
+  position:absolute;inset:10%;
+  border:1px solid rgba(199,62,102,.16);
+  border-radius:50%;
+  animation:orbitSpin 28s linear infinite;
+}
+.love-orbit::before,
+.love-orbit::after{
+  content:"";position:absolute;width:8px;height:8px;border-radius:50%;
+  background:var(--accent);opacity:.55;
+}
+.love-orbit::before{top:-4px;left:50%;margin-left:-4px}
+.love-orbit::after{bottom:18%;right:4%;width:6px;height:6px;background:var(--accent-2)}
+
+@keyframes orbitSpin{to{transform:rotate(360deg)}}
+
+@media (prefers-reduced-motion:reduce){
+  .love-heart,.love-orbit{animation:none}
 }

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh" data-lang="zh" data-i18n-key="webstore_lang">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 — Chat Glyph</title>
+<meta name="description" content="Privacy policy for the Chat Glyph browser extension (emoji & special character picker).">
+<link rel="icon" href="assets/icon-128.png" type="image/png">
+<link rel="stylesheet" href="../common/fonts.css">
+<link rel="stylesheet" href="../common/base.css">
+<link rel="stylesheet" href="theme.css">
+<script src="../common/i18n.js"></script>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<div class="bg-grain" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/icon-128.png" width="36" height="36" alt="">
+      <span>Chat Glyph</span>
+    </a>
+    <div class="nav-actions">
+      <a class="nav-link" href="index.html"><span lang="zh">返回主页</span><span lang="en">Home</span></a>
+      <span class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="zh">中</button>
+        <button type="button" data-lang="en">EN</button>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap pp-hero">
+  <span class="kicker">Privacy Policy</span>
+  <h1 lang="zh">Chat Glyph · 隐私政策</h1>
+  <h1 lang="en">Chat Glyph · Privacy Policy</h1>
+  <p class="meta" lang="zh">最后更新：2026 年 11 月 1 日</p>
+  <p class="meta" lang="en">Last updated: November 1, 2026</p>
+</header>
+
+<main class="wrap pp-doc">
+  <div lang="zh">
+    <p><strong>Chat Glyph</strong> 是本地运行的表情与特殊字符选择器。字符库随扩展打包，选择、搜索与插入均在你的设备上完成。设计目标是尽量少收集数据。</p>
+
+    <h2>一、在你设备上处理的内容</h2>
+    <ul>
+      <li>字符库检索、最近使用与自定义合集（<code>chrome.storage.local</code>）</li>
+      <li>设置：语言、每日额度计数、解锁状态缓存</li>
+      <li>插入动作仅在你于弹窗 / 侧边面板中主动点击字符后发生：扩展将所选字符写入当前活动输入框；无法插入时改为复制到剪贴板。扩展不读取、不上传输入框中的既有内容</li>
+      <li>可选 Pro 解锁经 <a href="https://extensionpay.com" target="_blank" rel="noopener">ExtensionPay</a>：可能在本地缓存付费/邮箱信息以便短时离线识别。银行卡信息由 ExtensionPay 及其支付服务商处理</li>
+    </ul>
+
+    <h2>二、我们不收集</h2>
+    <ul>
+      <li>网页内容、表单数据或网站 Cookie</li>
+      <li>浏览历史、标签标题或标签 URL</li>
+      <li>按键记录（仅插入你主动点击的单个字符）</li>
+      <li>分析或广告标识符；扩展界面不发起远程字体或追踪请求</li>
+    </ul>
+
+    <h2>三、权限说明</h2>
+    <table>
+      <thead>
+        <tr><th>权限</th><th>用途</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>storage</code></td><td>保存合集、最近使用、设置与本地解锁缓存</td></tr>
+        <tr><td><code>activeTab</code> + <code>scripting</code></td><td>仅在你点击字符后，将所选字符插入当前标签页的活动输入框</td></tr>
+        <tr><td><code>sidePanel</code></td><td>可选的常驻侧边面板（Chrome / Edge）</td></tr>
+      </tbody>
+    </table>
+    <div class="pp-note"><p>侧边面板与插入功能<strong>默认不活动</strong>，仅在你打开弹窗或开启面板并点击时工作。</p></div>
+
+    <h2>四、网络</h2>
+    <ul>
+      <li>仅在你打开购买或登录时访问 <strong>ExtensionPay</strong>（<code>extensionpay.com</code>）</li>
+      <li>无其他自有遥测接口；字符渲染完全离线</li>
+    </ul>
+
+    <h2>五、数据存储与你的权利</h2>
+    <p>全部数据保存在你的设备本地，可通过清除扩展数据或卸载 Chat Glyph 删除。</p>
+
+    <h2>六、未成年人</h2>
+    <p>本扩展不面向 13 岁以下儿童，也不会有意收集儿童的个人信息。</p>
+
+    <h2>七、政策更新</h2>
+    <p>我们可能不时更新本政策。重大变更可能随扩展更新说明。请定期查阅本页。</p>
+
+    <h2>八、联系我们</h2>
+    <p>隐私相关问题请发送邮件至 <a href="mailto:yugakhans@gmail.com">yugakhans@gmail.com</a>，或联系 Chrome Web Store 商品页上的发布者。</p>
+
+    <h2>九、同意</h2>
+    <p>安装并使用 Chat Glyph，即表示你同意本隐私政策。若不同意，请勿使用本扩展。</p>
+  </div>
+
+  <div lang="en">
+    <p><strong>Chat Glyph</strong> is a local emoji, kaomoji and special-character picker. The glyph library ships with the extension; browsing, search and insertion all run on your device. It is designed to minimize data collection.</p>
+
+    <h2>1. What we process on your device</h2>
+    <ul>
+      <li>Glyph search, recents and custom collections (<code>chrome.storage.local</code>)</li>
+      <li>Settings: language, daily-quota counters, local unlock cache</li>
+      <li>Insertion happens only after you click a glyph in the popup or side panel: the chosen character is written into the active input field, or copied to the clipboard when insertion isn’t possible. Existing field content is never read or uploaded</li>
+      <li>Optional Pro unlock via <a href="https://extensionpay.com" target="_blank" rel="noopener">ExtensionPay</a>: a local paid/email cache may be kept so unlock works offline for a limited TTL. Payment card data is processed by ExtensionPay / its processors</li>
+    </ul>
+
+    <h2>2. What we do not collect</h2>
+    <ul>
+      <li>Page content, form data, or website cookies</li>
+      <li>Browsing history, tab titles, or tab URLs</li>
+      <li>Keystrokes (only the single glyph you explicitly click is inserted)</li>
+      <li>Analytics or advertising identifiers; no remote font or tracking requests from the UI</li>
+    </ul>
+
+    <h2>3. Permissions</h2>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Why</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>storage</code></td><td>Collections, recents, settings and local unlock cache</td></tr>
+        <tr><td><code>activeTab</code> + <code>scripting</code></td><td>Inserting the glyph you just clicked into the active input of the current tab</td></tr>
+        <tr><td><code>sidePanel</code></td><td>The optional persistent side panel (Chrome / Edge)</td></tr>
+      </tbody>
+    </table>
+    <div class="pp-note"><p>The side panel and insertion are <strong>inactive by default</strong> — they act only when you open the popup or panel and click a glyph.</p></div>
+
+    <h2>4. Network</h2>
+    <ul>
+      <li><strong>ExtensionPay</strong> (<code>extensionpay.com</code>) only when you open purchase or login</li>
+      <li>No other first-party telemetry endpoints; glyph rendering is fully offline</li>
+    </ul>
+
+    <h2>5. Data storage and your rights</h2>
+    <p>All data stays in local storage on your device. Delete it by clearing extension data or uninstalling Chat Glyph.</p>
+
+    <h2>6. Children’s privacy</h2>
+    <p>This extension is not directed to children under 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>7. Changes</h2>
+    <p>We may update this policy from time to time. Significant changes may be noted with extension updates. Please review this page periodically.</p>
+
+    <h2>8. Contact</h2>
+    <p>For privacy questions, email <a href="mailto:yugakhans@gmail.com">yugakhans@gmail.com</a> or contact the publisher listed on the Chrome Web Store item page.</p>
+
+    <h2>9. Consent</h2>
+    <p>By installing and using Chat Glyph, you agree to this privacy policy. If you do not agree, please do not use the extension.</p>
+  </div>
+</main>
+
+<footer class="wrap footer">
+  <p>© <span data-year></span> Chat Glyph</p>
+  <div style="display:flex;gap:18px">
+    <a href="index.html"><span lang="zh">返回主页</span><span lang="en">Back to home</span></a>
+  </div>
+</footer>
+
+<script>WebstoreI18n.mount();</script>
+</body>
+</html>
