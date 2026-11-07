@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh" data-lang="zh" data-i18n-key="webstore_lang">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 — 留痕 · Paper Trail</title>
+<meta name="description" content="Privacy policy for the Paper Trail (留痕) browser extension — local-only work trail notes.">
+<link rel="icon" href="assets/icon-128.png" type="image/png">
+<link rel="stylesheet" href="../common/fonts.css">
+<link rel="stylesheet" href="../common/base.css">
+<link rel="stylesheet" href="theme.css">
+<script src="../common/i18n.js"></script>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<div class="bg-grain" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/icon-128.png" width="36" height="36" alt="">
+      <span>Paper Trail</span>
+    </a>
+    <div class="nav-actions">
+      <a class="nav-link" href="index.html"><span lang="zh">返回主页</span><span lang="en">Home</span></a>
+      <span class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="zh">中</button>
+        <button type="button" data-lang="en">EN</button>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap pp-hero">
+  <span class="kicker">Privacy Policy</span>
+  <h1 lang="zh">留痕 · Paper Trail · 隐私政策</h1>
+  <h1 lang="en">Paper Trail · Privacy Policy</h1>
+  <p class="meta" lang="zh">最后更新：2026 年 11 月 7 日</p>
+  <p class="meta" lang="en">Last updated: November 7, 2026</p>
+</header>
+
+<main class="wrap pp-doc">
+  <div lang="zh">
+    <p><strong>留痕 · Paper Trail</strong> 是纯本地、单机运行的工作留痕扩展。我们（开发者）无法看到、收集或传输你的记录正文。扩展<strong>没有自有服务器</strong>，也没有埋点统计。</p>
+
+    <h2>一、在你设备上处理的内容</h2>
+    <ul>
+      <li>留痕记录：标题、正文、人名、标签、时间、可选截图（仅存 <code>chrome.storage.local</code>）</li>
+      <li>设置：语言、气泡开关、默认类型等（同样仅本地）</li>
+      <li>可选 Pro 解锁经 <a href="https://extensionpay.com" target="_blank" rel="noopener">ExtensionPay</a>：可能在本地缓存付费状态，以便短时离线识别。银行卡信息由 ExtensionPay 及其支付服务商处理</li>
+    </ul>
+
+    <h2>二、我们不收集</h2>
+    <ul>
+      <li>账号注册信息（本扩展无需登录）</li>
+      <li>云端同步或备份（除非你自行导出文件）</li>
+      <li>分析 / 广告标识符、崩溃上报</li>
+      <li>把记录内容发送到任何 AI 或第三方 API</li>
+    </ul>
+
+    <h2>三、权限说明</h2>
+    <table>
+      <thead>
+        <tr><th>权限</th><th>用途</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>storage</code></td><td>保存记录、设置与本地支付缓存</td></tr>
+        <tr><td><code>contextMenus</code></td><td>右键「保存选中的文字」</td></tr>
+        <tr><td><code>activeTab</code> / <code>tabs</code></td><td>在你主动截图或需要当前页上下文时使用</td></tr>
+        <tr><td>主机权限</td><td>内容脚本注入「＋ 留痕」按钮；ExtensionPay 购买页注入结账脚本。内容脚本<strong>不会</strong>把页面正文上传到服务器</td></tr>
+      </tbody>
+    </table>
+    <div class="pp-note"><p>选中保存与自动识别均在本机规则引擎完成，不联网。</p></div>
+
+    <h2>四、网络汇总</h2>
+    <ul>
+      <li><strong>ExtensionPay</strong>（<code>extensionpay.com</code>）——仅在你打开购买或登录时</li>
+      <li>除此之外无任何自有分析 / 广告 / 云同步请求</li>
+    </ul>
+
+    <h2>五、数据存储与你的权利</h2>
+    <p>全部记录与设置保存在你的设备本地，可通过清除扩展数据、应用内清空或卸载删除。导出的文件由你自行保管。经 ExtensionPay 处理的支付数据，请参照其政策行使权利。</p>
+
+    <h2>六、未成年人</h2>
+    <p>本扩展不面向 13 岁以下儿童，也不会有意收集儿童的个人信息。</p>
+
+    <h2>七、政策更新</h2>
+    <p>我们可能不时更新本政策。重大变更可能随扩展更新说明。请定期查阅本页。</p>
+
+    <h2>八、联系我们与同意</h2>
+    <p>隐私相关问题请发送邮件至 <a href="mailto:yugakhans@gmail.com">yugakhans@gmail.com</a>，或联系 Chrome Web Store 商品页上的发布者。安装并使用留痕，即表示你同意本隐私政策；若不同意，请勿使用本扩展。</p>
+  </div>
+
+  <div lang="en">
+    <p><strong>Paper Trail (留痕)</strong> is a local-only work-trail extension. We (the developers) cannot see, collect or transmit your note bodies. The extension has <strong>no first-party server</strong> and no analytics.</p>
+
+    <h2>1. What we process on your device</h2>
+    <ul>
+      <li>Trail records: title, body, people, tags, time, optional screenshots (stored in <code>chrome.storage.local</code> only)</li>
+      <li>Settings: language, bubble toggle, default types (local only as well)</li>
+      <li>Optional Pro unlock via <a href="https://extensionpay.com" target="_blank" rel="noopener">ExtensionPay</a>: a local paid-status cache may be kept for short offline recognition. Payment card data is processed by ExtensionPay / its processors</li>
+    </ul>
+
+    <h2>2. What we do not collect</h2>
+    <ul>
+      <li>Account registration (no sign-in required)</li>
+      <li>Cloud sync or backup (unless you export files yourself)</li>
+      <li>Analytics / advertising identifiers or crash reporting</li>
+      <li>Sending record contents to any AI or third-party API</li>
+    </ul>
+
+    <h2>3. Permissions</h2>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Why</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>storage</code></td><td>Records, settings and local payment cache</td></tr>
+        <tr><td><code>contextMenus</code></td><td>“Save selection” in the right-click menu</td></tr>
+        <tr><td><code>activeTab</code> / <code>tabs</code></td><td>Used when you capture a screenshot or need current-tab context</td></tr>
+        <tr><td>Host permissions</td><td>Inject the “＋ Paper Trail” button; inject ExtensionPay checkout on purchase pages. Content scripts <strong>do not</strong> upload page bodies to any server</td></tr>
+      </tbody>
+    </table>
+    <div class="pp-note"><p>Selection capture and auto-detection run in a local rules engine with no network calls.</p></div>
+
+    <h2>4. Network summary</h2>
+    <ul>
+      <li><strong>ExtensionPay</strong> (<code>extensionpay.com</code>) — only when you open purchase or login</li>
+      <li>No other first-party analytics / ads / cloud-sync requests</li>
+    </ul>
+
+    <h2>5. Data storage and your rights</h2>
+    <p>All records and settings stay in local storage on your device — delete them by clearing extension data, using in-app wipe, or uninstalling. Exported files are yours to keep. For payment data handled by ExtensionPay, exercise your rights under its policy.</p>
+
+    <h2>6. Children’s privacy</h2>
+    <p>This extension is not directed to children under 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>7. Changes</h2>
+    <p>We may update this policy from time to time. Significant changes may be noted with extension updates. Please review this page periodically.</p>
+
+    <h2>8. Contact and consent</h2>
+    <p>For privacy questions, email <a href="mailto:yugakhans@gmail.com">yugakhans@gmail.com</a> or contact the publisher listed on the Chrome Web Store item page. By installing and using Paper Trail, you agree to this privacy policy. If you do not agree, please do not use the extension.</p>
+  </div>
+</main>
+
+<footer class="wrap footer">
+  <p>© <span data-year></span> 留痕 · Paper Trail</p>
+  <div style="display:flex;gap:18px">
+    <a href="index.html"><span lang="zh">返回主页</span><span lang="en">Back to home</span></a>
+  </div>
+</footer>
+
+<script>WebstoreI18n.mount();</script>
+</body>
+</html>

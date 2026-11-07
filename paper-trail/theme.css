@@ -1,0 +1,64 @@
+/* 留痕 · Paper Trail — paper cream + stamp red */
+:root{
+  --accent:#a7342c;
+  --accent-2:#3d5a4c;
+}
+
+.bg{
+  background:
+    radial-gradient(ellipse 90% 60% at 0% 0%,rgba(167,52,44,.08),transparent 55%),
+    radial-gradient(ellipse 80% 60% at 100% 18%,rgba(61,90,76,.08),transparent 55%),
+    linear-gradient(180deg,#f8f3e9,#f3ecdf);
+}
+
+.hero-visual-frame{
+  background:linear-gradient(165deg,#fffdf8,#f5efe3);
+}
+
+.pt-panel{
+  width:100%;height:100%;padding:18px;
+  display:grid;grid-template-rows:auto 1fr;gap:12px;
+}
+.pt-brand{
+  display:flex;align-items:center;gap:10px;
+}
+.pt-stamp{
+  width:34px;height:34px;border-radius:6px;
+  display:grid;place-items:center;
+  background:var(--accent);color:#fdf7ec;
+  font-family:var(--serif);font-weight:800;font-size:1.05rem;
+  transform:rotate(-4deg);
+  box-shadow:0 2px 0 rgba(120,30,24,.28);
+}
+.pt-name{font-size:.72rem;font-weight:800;letter-spacing:.12em;color:var(--accent)}
+.pt-cards{display:flex;flex-direction:column;gap:9px;justify-content:center}
+.pt-card{
+  display:flex;overflow:hidden;border-radius:12px;background:#fff;
+  border:1px solid rgba(33,28,24,.08);
+  box-shadow:0 14px 28px -18px rgba(52,40,26,.35);
+  animation:softFloat 5.6s ease-in-out infinite;
+}
+.pt-card:nth-child(2){animation-delay:.2s}
+.pt-card:nth-child(3){animation-delay:.4s}
+.pt-bar{width:4px;flex-shrink:0}
+.pt-body{padding:10px 12px;flex:1}
+.pt-meta{
+  display:flex;gap:8px;align-items:center;
+  font-size:.66rem;color:var(--muted);font-family:ui-monospace,Menlo,monospace;
+}
+.pt-tag{
+  border:1px solid rgba(167,52,44,.28);color:var(--accent);
+  border-radius:999px;padding:0 6px;font-weight:700;
+}
+.pt-title{
+  font-family:var(--serif);font-size:.88rem;font-weight:800;
+  color:var(--ink);margin-top:4px;line-height:1.35;
+}
+.pt-from{font-size:.68rem;color:var(--muted);text-align:right;margin-top:4px}
+
+.pp-doc th{background:rgba(167,52,44,.06)}
+.pp-doc code{color:var(--accent);background:rgba(167,52,44,.1)}
+
+@media (prefers-reduced-motion:reduce){
+  .pt-card{animation:none}
+}
