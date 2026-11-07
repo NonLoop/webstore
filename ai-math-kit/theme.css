@@ -1,0 +1,79 @@
+/* AI Math Kit — deep teal + cream math lab */
+:root{
+  --accent:#0B6E6E;
+  --accent-2:#C9A227;
+}
+
+.bg{
+  background:
+    radial-gradient(ellipse 70% 50% at 10% -8%,rgba(11,110,110,.14),transparent 55%),
+    radial-gradient(ellipse 50% 40% at 90% 5%,rgba(201,162,39,.12),transparent 50%),
+    linear-gradient(180deg,#F7F3EA,var(--bg-2, #f0ebe1));
+}
+
+.hero-visual-frame{
+  background:linear-gradient(165deg,#FFFcf7,#E4F2F1);
+}
+
+.mk-panel{
+  width:100%;height:100%;padding:18px;
+  display:grid;grid-template-rows:auto 1fr auto;gap:12px;
+}
+.mk-top{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+}
+.mk-tabs{display:flex;gap:6px}
+.mk-tabs i{
+  display:block;width:42px;height:8px;border-radius:999px;
+  background:rgba(26,36,34,.1);
+}
+.mk-tabs i.mk-on{
+  background:linear-gradient(90deg,var(--accent),#1A8A7A);
+}
+.mk-title{
+  font-size:.72rem;font-weight:800;letter-spacing:.06em;color:var(--accent);
+}
+.mk-card{
+  padding:16px 18px;border-radius:16px;background:#fff;
+  border:1px solid rgba(26,36,34,.08);
+  box-shadow:0 16px 30px -18px rgba(11,110,110,.35);
+  animation:softFloat 5.6s ease-in-out infinite;
+}
+.mk-id{
+  font-size:.66rem;font-weight:700;letter-spacing:.08em;color:#0B6E6E;
+  background:rgba(11,110,110,.1);border:1px solid rgba(11,110,110,.22);
+  padding:3px 9px;border-radius:999px;display:inline-block;margin-bottom:8px;
+}
+.mk-card-title{
+  font-family:var(--serif);font-size:1.12rem;font-weight:800;color:var(--ink);
+  margin-bottom:6px;
+}
+.mk-card-body{
+  font-size:.78rem;line-height:1.5;color:var(--muted);
+}
+.mk-syms{
+  display:flex;gap:10px;justify-content:flex-end;margin-top:10px;
+  font-family:var(--serif);font-size:1.15rem;color:rgba(11,110,110,.55);
+}
+.mk-break{
+  padding:12px 14px;border-radius:14px;
+  background:linear-gradient(150deg,rgba(11,110,110,.08),rgba(201,162,39,.1));
+  border:1px solid rgba(11,110,110,.16);
+  display:flex;align-items:center;gap:10px;
+}
+.mk-pi{
+  width:36px;height:36px;border-radius:50%;
+  display:grid;place-items:center;
+  background:var(--accent);color:#F3EFE6;
+  font-family:var(--serif);font-weight:800;font-size:1.1rem;
+  flex-shrink:0;
+}
+.mk-break-text{font-size:.78rem;line-height:1.4;color:var(--ink)}
+.mk-break-text strong{display:block;font-size:.72rem;color:var(--accent);margin-bottom:2px}
+
+.pp-doc th{background:rgba(11,110,110,.06)}
+.pp-doc code{color:var(--accent);background:rgba(11,110,110,.1)}
+
+@media (prefers-reduced-motion:reduce){
+  .mk-card{animation:none}
+}
