@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh" data-lang="zh" data-i18n-key="webstore_lang">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 — Aqua Tank</title>
+<meta name="description" content="Privacy policy for the Aqua Tank browser extension — a local 3D aquarium.">
+<link rel="icon" href="assets/icon-128.png" type="image/png">
+<link rel="stylesheet" href="../common/fonts.css">
+<link rel="stylesheet" href="../common/base.css">
+<link rel="stylesheet" href="theme.css">
+<script src="../common/i18n.js"></script>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<div class="bg-grain" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/icon-128.png" width="36" height="36" alt="">
+      <span>Aqua Tank</span>
+    </a>
+    <div class="nav-actions">
+      <a class="nav-link" href="index.html"><span lang="zh">返回主页</span><span lang="en">Home</span></a>
+      <span class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="zh">中</button>
+        <button type="button" data-lang="en">EN</button>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap pp-hero">
+  <span class="kicker">Privacy Policy</span>
+  <h1 lang="zh">Aqua Tank · 隐私政策</h1>
+  <h1 lang="en">Aqua Tank · Privacy Policy</h1>
+  <p class="meta" lang="zh">最后更新：2026 年 11 月 8 日</p>
+  <p class="meta" lang="en">Last updated: November 8, 2026</p>
+</header>
+
+<main class="wrap pp-doc">
+  <div lang="zh">
+    <p><strong>Aqua Tank</strong> 是运行在浏览器内的 3D 生态鱼缸扩展。渲染与交互均在你的设备上完成。我们（开发者）<strong>没有自有业务服务器</strong>用于收集鱼缸数据，也不上传你的造景内容。</p>
+
+    <h2>一、在你设备上处理的内容</h2>
+    <ul>
+      <li>鱼缸造景与物种摆放（存 <code>chrome.storage.local</code>）</li>
+      <li>偏好：界面语言、浮窗开关、环境音开关、夜间模式等</li>
+      <li>可选解锁状态缓存（Pro）</li>
+      <li>程序化音效在本机合成，不下载外部音频文件</li>
+    </ul>
+
+    <h2>二、我们不收集</h2>
+    <ul>
+      <li>账号注册信息（扩展可直接使用，无需登录）</li>
+      <li>云端同步、遥测、广告标识或崩溃上报</li>
+      <li>将鱼缸状态或页面内容发送到开发者服务器（我们没有此类服务器）</li>
+    </ul>
+
+    <h2>三、权限说明</h2>
+    <table>
+      <thead>
+        <tr><th>权限</th><th>用途</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>storage</code></td><td>保存造景、偏好与解锁缓存（全部仅本机）</td></tr>
+        <tr><td>主机匹配（http/https content script）</td><td>在普通网页注入可选的右上角浮窗入口；浮窗<strong>不读取、不上传</strong>页面内容</td></tr>
+      </tbody>
+    </table>
+
+    <h2>四、网络请求</h2>
+    <ul>
+      <li>核心鱼缸渲染与养护<strong>可离线运行</strong></li>
+      <li>若日后接入第三方支付解锁，仅在你主动发起购买时访问支付服务商域名；具体以扩展版本说明为准</li>
+      <li>无分析、无广告、无无关 CDN 拉取</li>
+    </ul>
+
+    <h2>五、数据存储与你的权利</h2>
+    <p>全部相关数据保存在你的设备本地。可通过清除扩展数据或卸载 Aqua Tank 删除。截图若保存到本机磁盘，由你自行保管。</p>
+
+    <h2>六、未成年人</h2>
+    <p>本扩展不面向 13 岁以下儿童，也不会有意收集儿童的个人信息。</p>
+
+    <h2>七、政策更新</h2>
+    <p>我们可能不时更新本政策，重大变更会随扩展版本说明。请定期查阅本页。</p>
+
+    <h2>八、联系我们与同意</h2>
+    <p>隐私相关问题请发送邮件至 <a href="mailto:yugakhans@gmail.com">yugakhans@gmail.com</a>，或联系 Chrome Web Store 商品页上的发布者。安装并使用 Aqua Tank，即表示你同意本隐私政策；若不同意，请勿使用本扩展。</p>
+  </div>
+
+  <div lang="en">
+    <p><strong>Aqua Tank</strong> is a 3D ecosystem aquarium that runs inside your browser. Rendering and interaction happen on your device. We (the developers) operate <strong>no first-party business server</strong> that collects tank data, and we do not upload your layout.</p>
+
+    <h2>1. What we process on your device</h2>
+    <ul>
+      <li>Tank layout and species placement (stored in <code>chrome.storage.local</code>)</li>
+      <li>Preferences: UI language, float toggle, ambient sound, night mode, and similar settings</li>
+      <li>Optional unlock-status cache (Pro)</li>
+      <li>Procedural audio synthesized on-device — no external audio downloads</li>
+    </ul>
+
+    <h2>2. What we do not collect</h2>
+    <ul>
+      <li>Account registration (you can use the extension without signing in)</li>
+      <li>Cloud sync, telemetry, advertising identifiers, or crash reporting</li>
+      <li>Sending tank state or page content to a developer server (we have none)</li>
+    </ul>
+
+    <h2>3. Permissions</h2>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Why</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>storage</code></td><td>Save layout, preferences, and unlock cache (all local only)</td></tr>
+        <tr><td>Host matches (http/https content script)</td><td>Inject an optional top-right float entry on ordinary pages; the float <strong>never reads or uploads</strong> page content</td></tr>
+      </tbody>
+    </table>
+
+    <h2>4. Network</h2>
+    <ul>
+      <li>Core aquarium rendering and care <strong>work offline</strong></li>
+      <li>If a third-party payment unlock is connected later, it is only contacted when you start a purchase; see the extension release notes</li>
+      <li>No analytics, ads, or unrelated CDN fetches</li>
+    </ul>
+
+    <h2>5. Storage and your rights</h2>
+    <p>All related data stays on your device. Delete it by clearing extension data or uninstalling Aqua Tank. Screenshots saved to disk are yours to keep.</p>
+
+    <h2>6. Children’s privacy</h2>
+    <p>This extension is not directed to children under 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>7. Changes</h2>
+    <p>We may update this policy from time to time. Significant changes will be noted with extension releases. Please review this page periodically.</p>
+
+    <h2>8. Contact and consent</h2>
+    <p>For privacy questions, email <a href="mailto:yugakhans@gmail.com">yugakhans@gmail.com</a> or contact the publisher listed on the Chrome Web Store item page. By installing and using Aqua Tank, you agree to this privacy policy. If you do not agree, please do not use the extension.</p>
+  </div>
+</main>
+
+<footer class="wrap footer">
+  <p>© <span data-year></span> Aqua Tank</p>
+  <div style="display:flex;gap:18px">
+    <a href="index.html"><span lang="zh">返回主页</span><span lang="en">Back to home</span></a>
+  </div>
+</footer>
+
+<script>WebstoreI18n.mount();</script>
+</body>
+</html>

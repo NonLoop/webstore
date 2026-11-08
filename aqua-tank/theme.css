@@ -1,0 +1,134 @@
+/* Aqua Tank — deep teal water + soft sand light */
+:root{
+  --accent:#0d7c8f;
+  --accent-2:#3ec4b0;
+}
+
+.bg{
+  background:
+    radial-gradient(ellipse 85% 55% at 12% -8%,rgba(13,124,143,.16),transparent 55%),
+    radial-gradient(ellipse 70% 50% at 92% 12%,rgba(62,196,176,.12),transparent 52%),
+    linear-gradient(180deg,#eef8fa,#e4f1f3);
+}
+
+.hero-visual-frame{
+  background:linear-gradient(165deg,#0a3d4a,#0d6474 45%,#148a8f);
+  overflow:hidden;
+}
+
+/* —— aquarium window mock —— */
+.at-panel{
+  width:100%;height:100%;padding:16px;
+  display:grid;grid-template-rows:auto 1fr auto;gap:12px;
+  color:#e8f7f8;
+}
+.at-bar{
+  display:flex;align-items:center;gap:8px;
+  padding:7px 10px;border-radius:10px;
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.14);
+}
+.at-dot{
+  width:8px;height:8px;border-radius:999px;background:var(--accent-2);
+  box-shadow:0 0 0 3px rgba(62,196,176,.25);
+}
+.at-name{
+  font-size:.64rem;font-weight:800;letter-spacing:.14em;opacity:.85;
+}
+.at-badge{
+  margin-left:auto;font-size:.58rem;font-weight:800;letter-spacing:.1em;
+  padding:3px 8px;border-radius:999px;
+  background:rgba(62,196,176,.22);color:#d8fff6;
+}
+
+.at-tank{
+  position:relative;border-radius:14px;overflow:hidden;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%,rgba(120,220,230,.28),transparent 55%),
+    linear-gradient(180deg,#0b5564,#084552 55%,#0a3a42);
+  border:1px solid rgba(255,255,255,.12);
+  min-height:180px;
+}
+.at-caustic{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 40% 30% at 30% 20%,rgba(180,255,240,.18),transparent 60%),
+    radial-gradient(ellipse 35% 28% at 70% 35%,rgba(140,230,255,.14),transparent 55%);
+  animation:atShimmer 7s ease-in-out infinite;
+}
+.at-sand{
+  position:absolute;left:0;right:0;bottom:0;height:22%;
+  background:linear-gradient(180deg,rgba,#c4a574 35%,#b8955e);
+  opacity:.9;
+}
+.at-plant{
+  position:absolute;bottom:18%;width:10px;border-radius:999px 999px 4px 4px;
+  background:linear-gradient(180deg,#4fd4a0,#1f8a62);
+  transform-origin:bottom center;
+  animation:atSway 4.8s ease-in-out infinite;
+}
+.at-plant:nth-child(1){left:12%;height:42%;animation-delay:0s}
+.at-plant:nth-child(2){left:22%;height:28%;width:8px;animation-delay:.4s}
+.at-plant:nth-child(3){right:18%;left:auto;height:36%;animation-delay:.8s}
+.at-fish{
+  position:absolute;width:28px;height:12px;border-radius:60% 40% 40% 60%;
+  background:linear-gradient(90deg,#f4e6d0,#e8783a);
+  box-shadow:inset -6px 0 0 rgba(232,80,40,.35);
+  animation:atSwim 9s ease-in-out infinite;
+}
+.at-fish:nth-child(4){top:28%;left:18%;animation-delay:0s}
+.at-fish:nth-child(5){
+  top:48%;left:55%;width:22px;height:10px;
+  background:linear-gradient(90deg,#ffb347,#ef8235);
+  animation-delay:1.2s;animation-duration:7.5s;
+}
+.at-fish:nth-child(6){
+  top:38%;left:40%;width:16px;height:8px;
+  background:linear-gradient(90deg,#7fd4ff,#3aa0e8);
+  animation-delay:2s;animation-duration:8.2s;
+}
+.at-bubble{
+  position:absolute;bottom:24%;width:6px;height:6px;border-radius:999px;
+  border:1.5px solid rgba(200,255,255,.45);background:rgba(200,255,255,.12);
+  animation:atRise 5.5s linear infinite;
+}
+.at-bubble:nth-child(7){left:30%;animation-delay:0s}
+.at-bubble:nth-child(8){left:62%;width:4px;height:4px;animation-delay:1.6s}
+.at-bubble:nth-child(9){left:48%;width:5px;height:5px;animation-delay:3s}
+
+.at-actions{
+  display:flex;gap:8px;flex-wrap:wrap;
+}
+.at-chip{
+  font-size:.68rem;font-weight:700;letter-spacing:.04em;
+  padding:6px 10px;border-radius:999px;
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.14);
+  color:#e8f7f8;
+}
+
+@keyframes atShimmer{
+  0%,100%{opacity:.85;transform:translateX(0)}
+  50%{opacity:1;transform:translateX(4px)}
+}
+@keyframes atSway{
+  0%,100%{transform:rotate(-4deg)}
+  50%{transform:rotate(5deg)}
+}
+@keyframes atSwim{
+  0%,100%{transform:translateX(0) scaleX(1)}
+  45%{transform:translateX(42px) scaleX(1)}
+  50%{transform:translateX(42px) scaleX(-1)}
+  95%{transform:translateX(0) scaleX(-1)}
+}
+@keyframes atRise{
+  0%{transform:translateY(0);opacity:.7}
+  100%{transform:translateY(-90px);opacity:0}
+}
+
+.pp-doc th{background:rgba(13,124,143,.08)}
+.pp-doc code{color:var(--accent);background:rgba(13,124,143,.09)}
+
+@media (prefers-reduced-motion:reduce){
+  .at-caustic,.at-plant,.at-fish,.at-bubble{animation:none}
+}
