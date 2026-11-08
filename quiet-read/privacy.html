@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh" data-lang="zh" data-i18n-key="webstore_lang">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 — 静阅 QuietRead</title>
+<meta name="description" content="Privacy policy for the QuietRead (静阅) browser extension — a local-first in-page reading assistant.">
+<link rel="icon" href="assets/icon-128.png" type="image/png">
+<link rel="stylesheet" href="../common/fonts.css">
+<link rel="stylesheet" href="../common/base.css">
+<link rel="stylesheet" href="theme.css">
+<script src="../common/i18n.js"></script>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<div class="bg-grain" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/icon-128.png" width="36" height="36" alt="">
+      <span>QuietRead</span>
+    </a>
+    <div class="nav-actions">
+      <a class="nav-link" href="index.html"><span lang="zh">返回主页</span><span lang="en">Home</span></a>
+      <span class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="zh">中</button>
+        <button type="button" data-lang="en">EN</button>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap pp-hero">
+  <span class="kicker">Privacy Policy</span>
+  <h1 lang="zh">静阅 QuietRead · 隐私政策</h1>
+  <h1 lang="en">QuietRead · Privacy Policy</h1>
+  <p class="meta" lang="zh">最后更新：2026 年 11 月 8 日 · 适用版本 1.2.0 及以上</p>
+  <p class="meta" lang="en">Last updated: November 8, 2026 · Applies to version 1.2.0 and later</p>
+</header>
+
+<main class="wrap pp-doc">
+  <div lang="zh">
+    <p><strong>静阅 QuietRead</strong> 是本地优先的页内辅助阅读扩展。我们（开发者）<strong>没有任何自有服务器</strong>，不收集、不上传、不贩卖你的任何数据。所有阅读偏好、摘录与阅读进度只保存在你的浏览器里。</p>
+
+    <h2>一、在你设备上处理的内容</h2>
+    <ul>
+      <li>阅读偏好：主题、字号、版宽、专注模式等（存 <code>chrome.storage.local</code>）</li>
+      <li>摘录与笔记：你选中的文字、上下文、笔记、来源页面（存本机 IndexedDB）</li>
+      <li>续读记忆：文章 URL 与滚动位置（存 <code>chrome.storage.local</code>）</li>
+      <li>页面正文：仅在打开阅读模式或使用本地分析时于内存中临时处理，<strong>不做持久化留存</strong></li>
+      <li>AI 配置：接口地址与密钥（仅存本机，详见第三节）</li>
+    </ul>
+
+    <h2>二、我们不收集</h2>
+    <ul>
+      <li>账号注册信息（本扩展无需登录，完全免费）</li>
+      <li>云端同步、备份或遥测</li>
+      <li>分析 / 广告标识符、崩溃上报、使用埋点</li>
+      <li>将你的页面内容发送到开发者的任何服务器（我们没有）</li>
+    </ul>
+
+    <h2>三、关于 AI 功能（可选，默认关闭）</h2>
+    <p>总结与问答功能需要你<strong>自行配置</strong>一个 OpenAI 兼容的接口地址与 API Key：</p>
+    <ul>
+      <li>密钥只保存在你的设备本地，开发者无法读取</li>
+      <li>只有当你主动点击「总结本页」「问 AI」时，当前页面的正文文本才会发送到你配置的接口地址（例如 <code>api.openai.com</code> 或你自建的服务）</li>
+      <li>请求由浏览器直接发往你配置的端点，<strong>不经过任何中间服务器</strong></li>
+      <li>未配置 AI 时，所有功能（本地分析、速览、摘录、阅读模式）照常可用，且完全离线</li>
+    </ul>
+    <div class="pp-note"><p>请注意：你配置的 AI 服务商对所收到文本的处理遵循其自身隐私政策。如需彻底离线，不要填写 AI 配置即可。</p></div>
+
+    <h2>四、权限说明</h2>
+    <table>
+      <thead>
+        <tr><th>权限</th><th>用途</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>storage</code></td><td>保存阅读偏好、AI 配置与续读记忆（全部仅本机）</td></tr>
+        <tr><td><code>unlimitedStorage</code></td><td>摘录库可能随使用增长，避免容量限制丢失数据</td></tr>
+        <tr><td>主机权限（http/https）</td><td>在你浏览的任意文章页注入阅读模式与摘录工具条；AI 功能把你主动请求的页面文本转发到你配置的接口。内容脚本<strong>不会</strong>把页面内容上传到任何开发者服务器</td></tr>
+      </tbody>
+    </table>
+
+    <h2>五、网络请求汇总</h2>
+    <ul>
+      <li><strong>你配置的 AI 端点</strong> —— 仅当你主动使用总结 / 问答功能时</li>
+      <li>除此之外无任何请求：无分析、无广告、无云同步、无字体或 CDN 加载</li>
+    </ul>
+
+    <h2>六、数据存储与你的权利</h2>
+    <p>全部数据保存在你的设备本地：可在浏览器「清除扩展数据」、在设置中清空摘录、或卸载扩展来删除。导出的 Markdown / JSON 文件由你自行保管。你可以随时要求删除——方法就是删除本地数据，因为我们本来就拿不到它。</p>
+
+    <h2>七、未成年人</h2>
+    <p>本扩展不面向 13 岁以下儿童，也不会有意收集儿童的个人信息。</p>
+
+    <h2>八、政策更新</h2>
+    <p>我们可能不时更新本政策，重大变更会随扩展版本说明。请定期查阅本页。</p>
+
+    <h2>九、联系我们与同意</h2>
+    <p>隐私相关问题请发送邮件至 <a href="mailto:yugakhans@gmail.com">yugakhans@gmail.com</a>，或联系 Chrome Web Store 商品页上的发布者。安装并使用静阅，即表示你同意本隐私政策；若不同意，请勿使用本扩展。</p>
+  </div>
+
+  <div lang="en">
+    <p><strong>QuietRead (静阅)</strong> is a local-first in-page reading assistant. We (the developers) run <strong>no first-party server</strong>: we do not collect, upload or sell any of your data. Your reading preferences, highlights and reading progress live only inside your browser.</p>
+
+    <h2>1. What we process on your device</h2>
+    <ul>
+      <li>Reader preferences: theme, font size, measure, focus mode (stored in <code>chrome.storage.local</code>)</li>
+      <li>Highlights &amp; notes: text you select, its context, your notes, source page (stored in local IndexedDB)</li>
+      <li>Resume memory: article URL and scroll position (stored in <code>chrome.storage.local</code>)</li>
+      <li>Page text: processed in memory only while reader mode or local analysis is active — <strong>never persisted</strong></li>
+      <li>AI configuration: endpoint URL and key (local only, see section 3)</li>
+    </ul>
+
+    <h2>2. What we do not collect</h2>
+    <ul>
+      <li>Account information (no sign-in; the extension is completely free)</li>
+      <li>Cloud sync, backups or telemetry</li>
+      <li>Analytics / advertising identifiers, crash reports, usage tracking</li>
+      <li>Sending your page content to any developer-operated server (we have none)</li>
+    </ul>
+
+    <h2>3. About the AI features (optional, off by default)</h2>
+    <p>Summaries and Q&amp;A require <strong>you</strong> to configure an OpenAI-compatible endpoint and API key:</p>
+    <ul>
+      <li>Your key is stored only on your device; the developer cannot read it</li>
+      <li>Only when you actively click “Summarize” or “Ask AI” is the current page’s text sent to the endpoint you configured (e.g. <code>api.openai.com</code> or your own service)</li>
+      <li>Requests go directly from your browser to your endpoint — <strong>no middleman server</strong></li>
+      <li>Without AI configured, every other feature (local analysis, briefs, highlights, reader mode) works as usual, fully offline</li>
+    </ul>
+    <div class="pp-note"><p>Note: how your AI provider handles received text is governed by its own privacy policy. For a fully offline setup, simply leave the AI configuration empty.</p></div>
+
+    <h2>4. Permissions</h2>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Why</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>storage</code></td><td>Reader preferences, AI configuration and resume memory (all local only)</td></tr>
+        <tr><td><code>unlimitedStorage</code></td><td>Your highlight library can grow over time; avoids capacity limits dropping data</td></tr>
+        <tr><td>Host permissions (http/https)</td><td>Inject the reader and highlight toolbar on any article you browse; forward page text to your configured endpoint only when you request it. Content scripts <strong>never</strong> upload page content to any developer server</td></tr>
+      </tbody>
+    </table>
+
+    <h2>5. Network summary</h2>
+    <ul>
+      <li><strong>Your configured AI endpoint</strong> — only when you actively use summarize / ask</li>
+      <li>No other requests: no analytics, no ads, no cloud sync, no fonts or CDN calls</li>
+    </ul>
+
+    <h2>6. Data storage and your rights</h2>
+    <p>All data stays local: delete it by clearing the extension’s data in your browser, wiping highlights in Settings, or uninstalling. Exported Markdown / JSON files are yours to keep. You can demand deletion at any time — just delete the local data, because that’s the only place it exists.</p>
+
+    <h2>7. Children’s privacy</h2>
+    <p>This extension is not directed to children under 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>8. Changes</h2>
+    <p>We may update this policy from time to time. Significant changes will be noted with extension releases. Please review this page periodically.</p>
+
+    <h2>9. Contact and consent</h2>
+    <p>For privacy questions, email <a href="mailto:yugakhans@gmail.com">yugakhans@gmail.com</a> or contact the publisher listed on the Chrome Web Store item page. By installing and using QuietRead, you agree to this privacy policy. If you do not agree, please do not use the extension.</p>
+  </div>
+</main>
+
+<footer class="wrap footer">
+  <p>© <span data-year></span> 静阅 · QuietRead</p>
+  <div style="display:flex;gap:18px">
+    <a href="index.html"><span lang="zh">返回主页</span><span lang="en">Back to home</span></a>
+  </div>
+</footer>
+
+<script>WebstoreI18n.mount();</script>
+</body>
+</html>
